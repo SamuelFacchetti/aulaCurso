@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	position: relative;
+	background-image: linear-gradient(to bottom right, white, lightblue);
+	font-family: 'Raleway', sans-serif;
+}
+
+form, div.conteudo{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 400px;
+	height: 450px;
+	background-color: rgba( 255, 255, 255, 0.6);
+	box-shadow: 0 0 20px rgba( 0, 0, 0, 0.4);
+}
+
+form{
+	border-radius: 15px;
+	left: 52.5%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+input{
+	width: 250px;
+	margin: 10px 0;
+	height: 40px;
+	border-radius: 20px;
+	padding-left: 20px;
+	border: 1px solid gray;
+}
+
+button{
+	margin-top: 20px;
+	cursor: pointer;
+	width: 200px;
+	height: 40px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
+	background-image: linear-gradient(to bottom right, lightblue, blue);
+}
+
+div.conteudo{
+	border-radius: 15px 0 0 15px;
+	right: 52.5%;
+	overflow-y: scroll;
+}
+
+div.conteudo p{
+	margin: 15px auto 0;
+	width: 365px;
+	height: 55px;
+	border-bottom: 1px solid #d1d1d1;
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	position: relative;
+}
+
+div.conteudo p a{
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	padding: 10px;
+	transform: translateY(-50%);
+	border: 1px solid #acacac;
+	background-color: rgba( 255, 255, 255, 0.6);
+}
+
+div.conteudo p a svg{
+	width: 20px;
+	height: 20px;
+	color: black;
+}
+
+div.conteudo p a:nth-child(1){right: 105px;}
+div.conteudo p a:nth-child(2){right: 55px;}
+div.conteudo p a:nth-child(3){right: 5px;}
+
+div.conteudo p a:nth-child(1) svg{color: #00b600;}
+div.conteudo p a:nth-child(2) svg{color: #919191;}
+div.conteudo p a:nth-child(3) svg{color: #ff0000;}
+
+div.conteudo p a:nth-child(1):hover, div.conteudo p a:nth-child(1):hover svg{
+	background-color: #00b600;
+	color: #FFFFFF;
+	border: none;
+}
+div.conteudo p a:nth-child(2):hover, div.conteudo p a:nth-child(2):hover svg{
+	background-color: #919191;
+	color: #FFFFFF;
+	border: none;
+}
+div.conteudo p a:nth-child(3):hover, div.conteudo p a:nth-child(3):hover svg{
+	background-color: #ff0000;
+	color: #FFFFFF;
+	border: none;
+}
+
+.view{
+	width: 330px;
+	height: 300px;
+	position: absolute;
+	border-radius: 15px;
+	background-color: rgba( 255, 255, 255, 0.6);
+	box-shadow: 0 0 20px rgba( 0, 0, 0, 0.4);
+	top: 50%;
+	left: 50%;
+	padding-left: 20px;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.view a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-150%);
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	color:rgba( 0, 0, 0, 0.9);
+	border: 2px solid rgba( 0, 0, 0, 0.4);
+	background-color: rgba( 255, 255, 255, 0.6);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.view a:hover{
+	color: rgba( 255, 255, 255, 0.6);
+	border: 2px solid rgba( 0, 0, 0, 0.9);
+	background-color: rgba( 0, 0, 0, 0.9);
+}
